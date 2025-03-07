@@ -12,6 +12,8 @@
 
 #tresc a {
     display: block;
+    max-width: 370px;
+
 }
 
 #tresc img {
