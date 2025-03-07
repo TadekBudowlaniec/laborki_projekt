@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz dotacji</title>
+</head>
+<body>
+    <h1>Formularz dotacji</h1>
+    <form action="#" method="post">
+        <p>
+            <fieldset>
+                <label for="beneficjent">Beneficjent:</label>
+                <input type="text" id="beneficjent" name="beneficjent" list="organizacje" required 
+                       title="Wybierz lub wpisz nazwę organizacji beneficjenta"><br>
+                <datalist id="organizacje">
+                    <option value="Wielka Orkiestra Świątecznej Pomocy">
+                    <option value="Caritas Polska">
+                    <option value="Polski Czerwony Krzyż">
+                    <option value="Wioski Dziecięce SOS">
+                    <option value="Polska Akcja Humanitarna">
+                </datalist>
+
+                <label for="wartosc">Wartość dotacji:</label>
+                <input type="number" id="wartosc" name="wartosc" min="20" step="5" required
+                       title="Wprowadź kwotę dotacji (minimum 20 zł)"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dane karty płatniczej:</legend>
+                <div>
+                    Karta:
+                    <input type="radio" id="visa" name="karta" value="visa" required>
+                    <label for="visa">Visa</label>
+                    <input type="radio" id="mastercard" name="karta" value="mastercard">
+                    <label for="mastercard">Master Card</label>
+                </div>
+
+                <label for="numer">Numer:</label>
+                <input type="text" id="numer" name="numer" required
+                       pattern="^(\d{13}|\d{16})$"
+                       title="Wprowadź 13 lub 16 cyfr numeru karty">
+                       <br>
+                <label for="data">Data ważności:</label>
+                <input type="month" id="data" name="data" required
+                       title="Wybierz miesiąc i rok ważności karty"><br>
+                    
+                <label for="cvv">Kod CVV:</label>
+                <input type="text" id="cvv" name="cvv" required
+                       pattern="^[0-9]{3,4}$"
+                       title="Wprowadź 3 lub 4 cyfry kodu CVV">
+            </fieldset><br>
+
+            <label for="darczynca">Darczyńca:</label>
+            <input type="text" id="darczynca" name="darczynca" required
+                   pattern=".{3,}"
+                   title="Wprowadź imię i nazwisko (minimum 3 znaki)"><br><br>
+
+            <input type="submit" value="Rejestruj">
+            <input type="reset" value="Wyczyść">
+        </p>
+    </form>
+</body>
+</html>
