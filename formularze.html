@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/formularze.css" type="text/css">
+    <title>Szybki kurs HTML</title>
+</head>
+<body>
+    <h1>Szybki kurs HTML</h1>
+
+    <p class="linki">
+        <a href="index.html">Podstawowe znaczniki</a>
+        <a href="tabele.html">Tworzenie tabel</a>
+        <a href="formularze.html">Budowa formularzy</a>
+    </p>
+
+    <h2>Podstawowe znaczniki formularza HTML to:</h2>
+    <ul class="tekst">
+        <li>&lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
+        <li>&lt;input&gt; - znacznik umożliwia wstawianie różnych pól (pole tekstowe, przycisk typu radio, przycisk typu checkbox) w zależności od wartości jego atrybutu type</li>
+        <li>&lt;select&gt; - pole formularza typu lista rozwijana</li>
+        <li>&lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+        <li>&lt;button&gt; - pole formularza typu przycisk</li>
+    </ul>
+
+    <h2>Przykładowy formularz HTML:</h2>
+    <form action="mailto:beatap@cs.pollub.pl" method="post">
+        <p class = "dane">
+            Nazwisko: <input type="text" name="nazwisko"><br>
+            Wiek: <input type="text" name="wiek"><br>
+            Państwo: <select name="panstwo">
+                <option>Polska</option>
+            </select><br>
+            Adres e-mail: <input type="text" name="email">
+        </p>
+
+        <p class="jezyk">
+            Zamawiam tutorial z języka:<br>
+            <input type="checkbox" name="php"> PHP
+            <input type="checkbox" name="cpp"> C/C++
+            <input type="checkbox" name="java"> Java
+        </p>
+
+        <p class= "zaplata">
+            Sposób zapłaty:<br>
+            <input type="radio" name="platnosc" value="eurocard"> eurocard
+            <input type="radio" name="platnosc" value="visa"> visa
+            <input type="radio" name="platnosc" value="przelew"> przelew bankowy
+        </p>
+
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Anuluj">
+    </form>
+
+    <p>&copy;BP</p>
+</body>
+</html> 

@@ -1,0 +1,20 @@
+#zdj {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+
+}
+
+#tresc h2 {
+    text-align: center;
+    font-family: calibri, tahoma;
+}
+
+#tresc a {
+    display: block;
+}
+
+#tresc img {
+    width: 100%;
+    height: auto;
+}
