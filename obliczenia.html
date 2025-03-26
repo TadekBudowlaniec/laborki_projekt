@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="JS/funkcje.js"></script>
+
+    <title>Szybki kurs HTML</title>
+</head>
+<body>
+    <h1>Szybki kurs HTML</h1>
+    
+    <nav>
+        <ul id="nav">
+            <li><a href="index.html">Podstawowe znaczniki</a></li>
+            <li><a href="tabele.html">Tworzenie tabel</a></li>
+            <li><a href="">Formularze</a>
+                <ul>
+                <li><a href="formularze.html" >Pola formularza</a></li>
+                <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
+                </ul>
+            </li>
+            <li><a href="galeria.html" title="">Galeria</a></li> 
+            <li><a href="">Pliki poboczne</a>
+                <ul>
+                    <li><a href="zamowienie.html">Zamawianie pizzy</a></li>
+                    <li><a href="walidacja.html">Walidacja</a></li>
+                    <li><a href="dotacje.html">Dotacje</a></li>
+                    <li><a href="rwd.html">RWD </a></li>
+                    <li><a href="js1.html">JS1</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Kalkulator rat pożyczki</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Kwota pożyczki (K):</td>
+                    <td><input id="kwota" type="number" min="0" /></td>
+                </tr>
+                <tr>
+                    <td>Oprocentowanie roczne (%):</td>
+                    <td><input id="oprocentowanie" type="number" min="0" step="0.1" /></td>
+                </tr>
+                <tr>
+                    <td>Liczba rat:</td>
+                    <td><input id="liczba_rat" type="number" min="1" /></td>
+                </tr>
+                <tr>
+                    <td><button onclick="obliczRate()">Oblicz ratę: </button></td>
+                    <td><input id="wynik" disabled value=""/></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <aside style = "margin-top: -170px;">
+        <div class = "box">
+            <h3>Walidatory:</h3>
+            <ul>
+                <li><a href="http://validator.w3.org/">HTML</a></li>
+                <li><a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+            </ul>
+        </div>
+        <div class = "box">
+            <h3>Kursy:</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+                <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+                <li><a href="https://www.w3schools.com/js/">JS</a></li>
+                <li><a href="https://www.w3schools.com/php/">PHP</a></li>
+            </ul>
+        </div>
+    </aside>
+    <footer>&copy;BP</footer>
+</body>
+</html>

@@ -9,30 +9,12 @@
 </head>
 <body>
     <h1>Szybki kurs HTML</h1>
-    
-    <nav>
-        <ul id="nav">
-            <li><a href="index.html">Podstawowe znaczniki</a></li>
-            <li><a href="tabele.html">Tworzenie tabel</a></li>
-            <li><a href="">Formularze</a>
-                <ul>
-                <li><a href="formularze.html" >Pola formularza</a></li>
-                <li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
-                </ul>
-            </li>
-            <li><a href="galeria.html" title="">Galeria</a></li> 
-            <li><a href="">Pliki poboczne</a>
-                <ul>
-                    <li><a href="zamowienie.html">Zamawianie pizzy</a></li>
-                    <li><a href="walidacja.html">Walidacja</a></li>
-                    <li><a href="dotacje.html">Dotacje</a></li>
-                    <li><a href="rwd.html">RWD
-                        
-                    </a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+
+    <p class="linki">
+        <a href="index.html">Podstawowe znaczniki</a>
+        <a href="tabele.html">Tworzenie tabel</a>
+        <a href="formularze.html">Budowa formularzy</a>
+    </p>
 
     <h2>Podstawowe znaczniki formularza HTML to:</h2>
     <ul class="tekst">
@@ -46,14 +28,12 @@
     <h2>Przykładowy formularz HTML:</h2>
     <form action="mailto:beatap@cs.pollub.pl" method="post">
         <p class = "dane">
-            Nazwisko: <input type="text" name="nazwisko" required title="wpisz nazwisko"><br>
-            Wiek: <input type="number" name="wiek" min="0" max="130" required title="wpisz wiek"><br>
-            Państwo: <select name="panstwo" required>
+            Nazwisko: <input type="text" name="nazwisko"><br>
+            Wiek: <input type="text" name="wiek"><br>
+            Państwo: <select name="panstwo">
                 <option>Polska</option>
-                <option>Stany Zjednoczone</option>
-                <option>Białoruś</option>
             </select><br>
-            Adres e-mail: <input type="email" name="email" required title="wpisz adres email">
+            Adres e-mail: <input type="text" name="email">
         </p>
 
         <p class="jezyk">

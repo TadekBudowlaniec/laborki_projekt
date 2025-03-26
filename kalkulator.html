@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+    <script src="JS/funkcje.js"></script>
+</head>
+<body>
+    <legend>
+        <h3>Kalkulator</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Liczba x:</td>
+                    <td><input id="x" type="number" /></td>
+                </tr>
+                <tr>
+                    <td>Liczba y:</td>
+                    <td><input id="y" type="number" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" name="operator" value="+" checked> Dodawanie
+                        <input type="radio" name="operator" value="-"> Odejmowanie
+                        <input type="radio" name="operator" value="*"> Mnożenie
+                        <input type="radio" name="operator" value="/"> Dzielenie
+                    </td>
+                </tr>
+                <tr>
+                    <td><button onclick="obliczDzialanie()">Oblicz: </button></td>
+                    <td><input id="wynik" disabled value=""/></td>
+                </tr>
+            </tbody>
+        </table>
+    </legend>
+</body>
+</html> 

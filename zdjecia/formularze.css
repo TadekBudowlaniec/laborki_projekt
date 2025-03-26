@@ -1,0 +1,35 @@
+form {
+background: rgb(222, 242, 255);
+text-align: center;
+margin: auto;
+border-radius: 10%;
+border: 3px solid #000000;
+max-width: 500px;
+padding: 10px;
+}
+
+.dane{
+    background: #f4b0b0;
+    border: 1px solid #000000;
+
+}
+.jezyk{
+    background: #b1f4b0;
+    border: 1px solid #000000;
+
+
+}
+.zaplata{
+    background: #b0bff4;
+    border: 1px solid #000000;
+
+}
+.linki{
+    background: rgb(222, 242, 255);
+    border: 1px solid #000000;
+    padding: 5px;
+}
+.tekst{
+    background: rgb(222, 242, 255);
+    border: 1px solid #000000;
+}
